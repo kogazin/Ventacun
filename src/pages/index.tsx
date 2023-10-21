@@ -2,9 +2,19 @@ import { Button, TextField, MenuItem } from "@mui/material";
 
 // const inter = Inter({ subsets: ['latin'] })
 const selectBox = [
-  { label: "label1", value: "value1" },
-  { label: "label2", value: "value2" },
-  { label: "label3", value: "value3" },
+  { label: "label1", value: 100 },
+  { label: "label2", value: 200 },
+  { label: "label3", value: 300 },
+];
+const selectBox1 = [
+  { label: "label1", value: 100 },
+  { label: "label2", value: 200 },
+  { label: "label3", value: 300 },
+];
+const selectBox2 = [
+  { label: "label1", value: 100 },
+  { label: "label2", value: 200 },
+  { label: "label3", value: 300 },
 ];
 export default function Home() {
   return (
@@ -22,7 +32,7 @@ export default function Home() {
         fullWidth
       >
         {/* // 以下セレクトの内容を一つ一つMenuItemに格納 */}
-        {selectBox.map((item, index) => (
+        {selectBox1.map((item, index) => (
           <MenuItem key={index} value={item.value}>
             {item.label}
           </MenuItem>
@@ -71,7 +81,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]"></div>
+      {/* <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]"></div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
@@ -141,7 +151,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </main>
   );
 }
