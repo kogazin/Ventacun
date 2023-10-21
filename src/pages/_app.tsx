@@ -1,12 +1,7 @@
 // import '@/styles/globals.css'
 
-import {
-  Autocomplete,
-  Button,
-  MenuItem,
-  TextField,
-} from "../../node_modules/@mui/material/index";
-import { AppProps } from "../../node_modules/next/dist/shared/lib/router/router";
+import { Autocomplete, Button, MenuItem, TextField } from "@mui/material";
+import { AppProps } from "next/dist/shared/lib/router/router";
 
 const selectBox = [
   { label: "label1", value: "value1" },
