@@ -34,18 +34,12 @@ const App = () => {
   const [selectedValue6, setSelectedValue6] = useState<number>(0);
   const [selectedValue7, setSelectedValue7] = useState<number>(0);
   const [selectedValue8, setSelectedValue8] = useState<number>(0);
-  const [selectedValue9, setSelectedValue9] = useState<number>(0);
-  const [selectedValue10, seSselectedValue10] = useState<number>(0);
-  const [selectedValue11, setselectedValue11] = useState<number>(0);
-  const [selectedValue12, setselectedValue12] = useState<number>(0);
-  // const [selectedValue13, setSelectedValue2] = useState<number>(0);
+
   const [totalValue1, setTotalValue1] = useState<number>(0); // 初期値を設定
   const [totalValue2, setTotalValue2] = useState<number>(0); // 初期値を設定
   const [totalValue3, setTotalValue3] = useState<number>(0); // 初期値を設定
   const [totalValue4, setTotalValue4] = useState<number>(0); // 初期値を設定
-  const [totalValue5, setTotalValue5] = useState<number>(0); // 初期値を設定
-  const [totalValue6, setTotalValue6] = useState<number>(0); // 初期値を設定
-
+  const totalSum = totalValue1 + totalValue2 + totalValue3 + totalValue4;
   // ドリンク
   const handleSelectChange1 = (
     event: React.ChangeEvent<{ value: unknown }>
@@ -207,7 +201,7 @@ const App = () => {
           </Button>
         </div>
         <div>
-          <p>選択値の合計: {totalValue1}</p>
+          <p>小計: {totalValue1}</p>
         </div>
       </div>
       <div>
@@ -249,7 +243,7 @@ const App = () => {
           </Button>
         </div>
         <div>
-          <p>選択値の合計: {totalValue2}</p>
+          <p>小計: {totalValue2}</p>
         </div>
       </div>
       <div>
@@ -291,7 +285,7 @@ const App = () => {
           </Button>
         </div>
         <div>
-          <p>選択値の合計: {totalValue3}</p>
+          <p>小計: {totalValue3}</p>
         </div>
       </div>
       <div>
@@ -333,8 +327,11 @@ const App = () => {
           </Button>
         </div>
         <div>
-          <p>選択値の合計: {totalValue4}</p>
+          <p>小計: {totalValue4}</p>
         </div>
+      </div>
+      <div>
+        <p>合計値: {totalSum}</p>
       </div>
       {/*
        */}
@@ -377,7 +374,7 @@ const App = () => {
           </Button>
         </div>
         <div>
-          <p>選択値の合計: {totalValue3}</p>
+          <p>小計: {totalValue3}</p>
         </div>
       </div> */}
       {/* <div>
@@ -419,7 +416,7 @@ const App = () => {
           </Button>
         </div>
         <div>
-          <p>選択値の合計: {totalValue1}</p>
+          <p>小計: {totalValue1}</p>
         </div>
       </div>
       <div>
@@ -461,7 +458,7 @@ const App = () => {
           </Button>
         </div>
         <div>
-          <p>選択値の合計: {totalValue}</p>
+          <p>小計: {totalValue}</p>
         </div>
       </div>
       <div>
@@ -503,7 +500,7 @@ const App = () => {
           </Button>
         </div>
         <div>
-          <p>選択値の合計: {totalValue}</p>
+          <p>小計: {totalValue}</p>
         </div>
       </div>
       <div>
@@ -545,7 +542,7 @@ const App = () => {
           </Button>
         </div>
         <div>
-          <p>選択値の合計: {totalValue}</p>
+          <p>小計: {totalValue}</p>
         </div>
       </div> */}
     </>
