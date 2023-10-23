@@ -40,6 +40,7 @@ const App = () => {
   const [totalValue3, setTotalValue3] = useState<number>(0); // 初期値を設定
   const [totalValue4, setTotalValue4] = useState<number>(0); // 初期値を設定
   const totalSum = totalValue1 + totalValue2 + totalValue3 + totalValue4;
+
   // ドリンク
   const handleSelectChange1 = (
     event: React.ChangeEvent<{ value: unknown }>
@@ -168,7 +169,7 @@ const App = () => {
             id="selectbox1"
             label="初期設定のラベル1"
             select
-            fullWidth
+            //
             value={selectedValue1}
             onChange={handleSelectChange1}
           >
@@ -182,7 +183,6 @@ const App = () => {
             id="selectbox2"
             label="初期設定のラベル2"
             select
-            fullWidth
             value={selectedValue2}
             onChange={handleSelectChange2}
           >
@@ -210,7 +210,6 @@ const App = () => {
             id="selectbox1"
             label="初期設定のラベル1"
             select
-            fullWidth
             value={selectedValue3}
             onChange={handleSelectChange3}
           >
@@ -224,7 +223,6 @@ const App = () => {
             id="selectbox2"
             label="初期設定のラベル2"
             select
-            fullWidth
             value={selectedValue4}
             onChange={handleSelectChange4}
           >
@@ -252,7 +250,6 @@ const App = () => {
             id="selectbox1"
             label="初期設定のラベル1"
             select
-            fullWidth
             value={selectedValue5}
             onChange={handleSelectChange5}
           >
@@ -266,7 +263,6 @@ const App = () => {
             id="selectbox2"
             label="初期設定のラベル2"
             select
-            fullWidth
             value={selectedValue6}
             onChange={handleSelectChange6}
           >
@@ -294,7 +290,6 @@ const App = () => {
             id="selectbox1"
             label="初期設定のラベル1"
             select
-            fullWidth
             value={selectedValue7}
             onChange={handleSelectChange7}
           >
@@ -308,7 +303,6 @@ const App = () => {
             id="selectbox2"
             label="初期設定のラベル2"
             select
-            fullWidth
             value={selectedValue8}
             onChange={handleSelectChange8}
           >
@@ -333,6 +327,10 @@ const App = () => {
       <div>
         <p>合計値: {totalSum}</p>
       </div>
+      <div>
+        <p>合計値: {totalSum * 1.1}</p>
+      </div>
+
       {/*
        */}
       {/* <div>
@@ -341,7 +339,7 @@ const App = () => {
             id="selectbox1"
             label="初期設定のラベル1"
             select
-            fullWidth
+            
             value={selectedValue5}
             onChange={handleSelectChange5}
           >
@@ -355,7 +353,7 @@ const App = () => {
             id="selectbox2"
             label="初期設定のラベル2"
             select
-            fullWidth
+            
             value={selectedValue6}
             onChange={handleSelectChange6}
           >
@@ -383,7 +381,7 @@ const App = () => {
             id="selectbox1"
             label="初期設定のラベル1"
             select
-            fullWidth
+            
             value={selectedValue3}
             onChange={handleSelectChange3}
           >
@@ -397,7 +395,7 @@ const App = () => {
             id="selectbox2"
             label="初期設定のラベル2"
             select
-            fullWidth
+            
             value={selectedValue4}
             onChange={handleSelectChange4}
           >
@@ -425,7 +423,7 @@ const App = () => {
             id="selectbox1"
             label="初期設定のラベル1"
             select
-            fullWidth
+            
             value={selectedValue1}
             onChange={handleSelectChange1}
           >
@@ -439,7 +437,7 @@ const App = () => {
             id="selectbox2"
             label="初期設定のラベル2"
             select
-            fullWidth
+            
             value={selectedValue2}
             onChange={handleSelectChange2}
           >
@@ -467,7 +465,7 @@ const App = () => {
             id="selectbox1"
             label="初期設定のラベル1"
             select
-            fullWidth
+            
             value={selectedValue1}
             onChange={handleSelectChange1}
           >
@@ -481,7 +479,7 @@ const App = () => {
             id="selectbox2"
             label="初期設定のラベル2"
             select
-            fullWidth
+            
             value={selectedValue2}
             onChange={handleSelectChange2}
           >
@@ -509,7 +507,7 @@ const App = () => {
             id="selectbox1"
             label="初期設定のラベル1"
             select
-            fullWidth
+            
             value={selectedValue1}
             onChange={handleSelectChange1}
           >
@@ -523,7 +521,7 @@ const App = () => {
             id="selectbox2"
             label="初期設定のラベル2"
             select
-            fullWidth
+            
             value={selectedValue2}
             onChange={handleSelectChange2}
           >
